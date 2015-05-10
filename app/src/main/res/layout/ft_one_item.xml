@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ftItemImg"
+        android:layout_gravity="center_vertical"
+        android:focusable="true"
+        android:src="@drawable/hsh1"
+        android:maxHeight="130dp"
+        android:layout_marginLeft="5dp"
+        android:maxWidth="110dp"
+        android:adjustViewBounds="true"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Laura Croft"
+            android:id="@+id/ftItemName"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="(514) 555-1212"
+            android:id="@+id/ftItemPhone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="LC@gmail.com"
+            android:id="@+id/ftItemEmail" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ftItemRating"
+            android:layout_gravity="left|center_horizontal"
+            android:numStars="5"
+            android:secondaryProgress="@android:integer/config_longAnimTime"
+            android:isIndicator="false"
+            style="@style/foodRatingBar"   />
+    </LinearLayout>
+
+</LinearLayout>
